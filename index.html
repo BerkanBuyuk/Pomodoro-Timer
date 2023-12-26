@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="container">
+        <div id="options">
+            <label for="minutes">Çalışma süresini seçin:</label>
+            <select id="minutes" name="minutes">
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="75">75</option>
+            </select>
+            <label for="shortBreak">Mola süresini seçin:</label>
+            <select id="shortBreak" name="shortBreak">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+            </select>
+        </div>
+        <div id="timerContainer">
+            <h1 id="timer">25:00</h1>
+            <button id="startButton" onclick="startTimer()">Başla</button>
+            <button id="resetButton" onclick="resetTimer()">Sıfırla</button>
+        </div>
+
+        <div>
+            <div id="youtubeInput">
+                <label for="youtubeVideoId">YouTube Video ID'sini Girin:</label>
+                <input type="text" id="youtubeVideoId" name="youtubeVideoId" placeholder="Video ID">
+            </div>
+            <div id="youtubeContainer">
+                <!-- YouTube Video ID'sini otomatik olarak yerleştirmek için JavaScript kullanılacak -->
+            </div>
+            <button id="startYouTubeButton" onclick="startYouTube()">YouTube Video'yu Başlat</button>
+        </div>
+
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>
