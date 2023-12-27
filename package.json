@@ -1,5 +1,6 @@
 {
   "name": "pomodoro",
+  "productName" : "Pomodoro Timer",
   "version": "1.0.0",
   "description": "Hello World!",
   "main": "main.js",
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^28.1.0"
+    "electron": "^28.1.0",
+    "electron-packager": "^17.1.2"
   }
 }
