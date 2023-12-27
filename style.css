@@ -1,7 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
   text-align: center;
-  background-color: #2c3e50;
+  background-color: #475c6c;
   color: #ecf0f1;
   margin: 0;
   padding: 0;
@@ -54,13 +54,18 @@ input:hover {
 
 select::placeholder,
 input::placeholder {
-  color: #ffffff; /* Placeholder rengi */
+  color: #000; /* Placeholder rengi */
+}
+
+select:focus::placeholder,
+input:focus::placeholder {
+  color: transparent; /* Set the placeholder color to transparent on focus */
 }
 
 #timer {
-  font-size: 4em;
+  font-size: 5em;
   margin: 20px 0;
-  color: #3498db;
+  color: #65aedf;
 }
 
 #youtubeContainer {
@@ -80,14 +85,15 @@ input::placeholder {
   transition: background-color 0.3s ease;
 }
 #startButton:hover {
-  background-color: #2980b9;
+  background-color: #1383ce;
+  color: #000;
 }
 
 #resetButton {
   padding: 12px 20px;
   margin: 10px;
   font-size: 1.2em;
-  background-color: #e74c3c; /* Sıfırla butonu rengi */
+  background-color: #373e43; /* Sıfırla butonu rengi */
   color: white;
   border: none;
   border-radius: 8px;
@@ -95,15 +101,15 @@ input::placeholder {
   transition: background-color 0.3s ease;
 }
 #resetButton:hover {
-  background-color: #769898;
-  color: #000;
+  background-color: #000;
+  color: #fff;
 }
 
 #startYouTubeButton {
   padding: 12px 20px;
   margin: 10px;
   font-size: 1.2em;
-  background-color: #27ae60; /* YouTube başlat butonu rengi */
+  background-color: #cd201f; /* YouTube başlat butonu rengi */
   color: white;
   border: none;
   border-radius: 8px;
@@ -114,7 +120,7 @@ input::placeholder {
   background-color: #2980b9; /* Hover rengi */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #youtubeInput,
   #youtubeContainer,
   #startYouTubeButton {
