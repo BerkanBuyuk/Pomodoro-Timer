@@ -46,7 +46,7 @@ select {
   font-size: 1.5em;
   border: none;
   border-radius: 8px;
-  background-color: #3498db; /* Ana renk */
+  background-color: #5a7e9f; /* Ana renk */
   color: white;
   width: calc(100% - 20px);
   appearance: none;
@@ -55,18 +55,18 @@ select {
 input {
   padding: 10px;
   font-size: 1.2em;
-  border: none;
+  border: 1;
   border-radius: 8px;
-  background-color: #3498db; /* Ana renk */
+  background-color: #567998; /* Ana renk */
   color: white;
-  width: auto;
-  appearance: none;
   text-align: center;
 }
 
-select:hover,
-input:hover {
+select:hover {
   cursor: pointer;
+}
+input:hover {
+  cursor: text;
 }
 
 select::placeholder,
@@ -78,7 +78,7 @@ input::placeholder {
 
 select:focus::placeholder,
 input:focus::placeholder {
-  color: transparent; /* Set the placeholder color to transparent on focus */
+  color: transparent;
 }
 
 #timer {
@@ -96,7 +96,7 @@ input:focus::placeholder {
 }
 
 #startButton {
-  padding: 12px 20px;
+  padding: 10px 30px 10px 30px;
   margin: 10px;
   font-size: 1.2em;
   background-color: #ffffff; /* Başlat butonu rengi */
@@ -113,7 +113,7 @@ input:focus::placeholder {
 }
 
 #resetButton {
-  padding: 12px 20px;
+  padding: 10px 30px 10px 30px;
   margin: 10px;
   font-size: 1.2em;
   background-color: #373e43; /* Sıfırla butonu rengi */
