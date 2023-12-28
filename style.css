@@ -40,8 +40,7 @@ label {
   color: #3498db;
 }
 
-select,
-input {
+select {
   margin: 10px;
   padding: 10px;
   font-size: 1.5em;
@@ -50,6 +49,17 @@ input {
   background-color: #3498db; /* Ana renk */
   color: white;
   width: calc(100% - 20px);
+  appearance: none;
+  text-align: center;
+}
+input {
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db; /* Ana renk */
+  color: white;
+  width: auto;
   appearance: none;
   text-align: center;
 }
@@ -116,9 +126,9 @@ input:focus::placeholder {
 }
 
 #startYouTubeButton {
-  padding: 12px 20px;
-  margin: 10px;
+  padding: 10px;
   font-size: 1.2em;
+  border: none;
   background-color: #cd201f; /* YouTube başlat butonu rengi */
   color: white;
   border: none;
@@ -150,4 +160,8 @@ input:focus::placeholder {
   border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+#youtubeInput {
+  margin-top: 10px;
 }
