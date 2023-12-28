@@ -54,7 +54,9 @@ input:hover {
 
 select::placeholder,
 input::placeholder {
-  color: #000; /* Placeholder rengi */
+  color: white;
+  opacity: 0.3;
+  /* Placeholder rengi */
 }
 
 select:focus::placeholder,
