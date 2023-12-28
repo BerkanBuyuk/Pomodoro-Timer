@@ -3,6 +3,12 @@
   src: url(RubikDoodleShadow-Regular.ttf);
 }
 
+@font-face {
+  font-family: "signika";
+  src: url(SignikaNegative-VariableFont_wght.ttf);
+  font-weight: bold;
+}
+
 body {
   font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -23,21 +29,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
-  width: 90%;
+  justify-content: center;
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 3em;
-  color: #3498db;
-  margin-bottom: 20px;
-}
-
 label {
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-bottom: 5px;
-  color: #3498db;
+  color: #fff;
+  font-family: "signika";
 }
 
 select {
@@ -83,7 +83,7 @@ input:focus::placeholder {
 
 #timer {
   font-size: 5em;
-  margin: 20px 0;
+  margin: 20px;
   color: white;
   font-family: rubikDoodle;
 }
@@ -91,6 +91,8 @@ input:focus::placeholder {
 #youtubeContainer {
   margin-top: 20px;
   display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 #startButton {
@@ -164,4 +166,13 @@ input:focus::placeholder {
 
 #youtubeInput {
   margin-top: 10px;
+}
+
+#minutes {
+  font-family: "signika";
+}
+#shortBreak {
+  font-family: "signika";
+}
+option {
 }
