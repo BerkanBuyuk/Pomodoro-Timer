@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "rubikDoodle";
+  src: url(RubikDoodleShadow-Regular.ttf);
+}
+
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   text-align: center;
   background-color: #476f94;
   color: #ecf0f1;
@@ -67,7 +74,8 @@ input:focus::placeholder {
 #timer {
   font-size: 5em;
   margin: 20px 0;
-  color: #65aedf;
+  color: white;
+  font-family: rubikDoodle;
 }
 
 #youtubeContainer {
@@ -79,8 +87,8 @@ input:focus::placeholder {
   padding: 12px 20px;
   margin: 10px;
   font-size: 1.2em;
-  background-color: #3498db; /* Başlat butonu rengi */
-  color: white;
+  background-color: #ffffff; /* Başlat butonu rengi */
+  color: #476f94;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -132,4 +140,14 @@ input:focus::placeholder {
   #startYouTubeButton {
     margin-top: 10px;
   }
+}
+
+#timerContainer {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #5a7e9f;
+  transition: background-color 0.5s ease-in-out 0s;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
