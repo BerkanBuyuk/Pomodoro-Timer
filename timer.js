@@ -1,7 +1,7 @@
 let timer;
 let minutes;
 let seconds;
-let isWorking = true; // Çalışma süresi mi, mola süresi mi kontrolü
+let isWorking = true;
 
 function startTimer() {
   if (!timer) {
@@ -57,7 +57,6 @@ function resetTimer() {
 }
 
 function startYouTube() {
-  // YouTube Video ID'sini al ve gömme işlemi yap
   const videoId = document.getElementById("youtubeVideoId").value;
   embedYouTubeVideo(videoId);
 }

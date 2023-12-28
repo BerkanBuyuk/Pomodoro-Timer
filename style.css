@@ -46,7 +46,7 @@ select {
   font-size: 1.5em;
   border: none;
   border-radius: 8px;
-  background-color: #5a7e9f; /* Ana renk */
+  background-color: #5a7e9f;
   color: white;
   width: calc(100% - 20px);
   appearance: none;
@@ -57,7 +57,7 @@ input {
   font-size: 1.2em;
   border: 1;
   border-radius: 8px;
-  background-color: #567998; /* Ana renk */
+  background-color: #567998;
   color: white;
   text-align: center;
 }
@@ -73,7 +73,6 @@ select::placeholder,
 input::placeholder {
   color: white;
   opacity: 0.3;
-  /* Placeholder rengi */
 }
 
 select:focus::placeholder,
@@ -99,7 +98,7 @@ input:focus::placeholder {
   padding: 10px 30px 10px 30px;
   margin: 10px;
   font-size: 1.2em;
-  background-color: #ffffff; /* Başlat butonu rengi */
+  background-color: #ffffff;
   color: #476f94;
   border: none;
   border-radius: 8px;
@@ -108,15 +107,15 @@ input:focus::placeholder {
   font-family: "signika";
 }
 #startButton:hover {
-  background-color: #1383ce;
-  color: #000;
+  background-color: #4d677e;
+  color: #fff;
 }
 
 #resetButton {
   padding: 10px 30px 10px 30px;
   margin: 10px;
   font-size: 1.2em;
-  background-color: #373e43; /* Sıfırla butonu rengi */
+  background-color: #373e43;
   color: white;
   border: none;
   border-radius: 8px;
@@ -130,19 +129,33 @@ input:focus::placeholder {
 }
 
 #startYouTubeButton {
+  display: flex;
   padding: 10px;
   font-size: 1.2em;
-  border: none;
-  background-color: #cd201f; /* YouTube başlat butonu rengi */
+  border: 1;
+  background-color: #5a7e9f;
   color: white;
-  border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: "signika";
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
 }
+
 #startYouTubeButton:hover {
-  background-color: #2980b9; /* Hover rengi */
+  background-color: #cd201f;
+}
+#icon-button {
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+}
+#youtubeInput {
+  display: flex;
 }
 
 @media screen and (max-width: 800px) {
@@ -150,10 +163,6 @@ input:focus::placeholder {
   #youtubeContainer,
   #startYouTubeButton {
     display: none;
-  }
-
-  #startYouTubeButton {
-    margin-top: 10px;
   }
 }
 
@@ -167,10 +176,6 @@ input:focus::placeholder {
   padding-right: 20px;
 }
 
-#youtubeInput {
-  margin-top: 10px;
-}
-
 #minutes {
   font-family: "signika";
 }
@@ -181,4 +186,5 @@ option {
 }
 #youtubeVideoId {
   font-family: "signika";
+  margin: 10px;
 }
